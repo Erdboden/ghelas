@@ -13,7 +13,7 @@ public class Currency {
 
     private String symbol;
 
-    @OneToMany(cascade = CascadeType.REMOVE)
+    @OneToMany(cascade = CascadeType.ALL)
     @JoinColumn(name = "currency_id")
     private List<CurrencyTranslation> currencyTranslations;
 

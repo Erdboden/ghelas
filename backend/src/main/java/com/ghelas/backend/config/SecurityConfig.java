@@ -14,6 +14,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http.authorizeRequests()
-                .antMatchers("/", FURNITURE_URI, CMS_URI).permitAll();
+                .antMatchers("/", CMS_URI).permitAll();
     }
 }

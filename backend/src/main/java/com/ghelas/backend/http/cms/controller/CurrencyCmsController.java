@@ -46,7 +46,6 @@ public class CurrencyCmsController {
 
     @RequestMapping(path = "/create", method = RequestMethod.POST)
     public String store(CurrencyRequest currencyRequest) {
-        System.out.println(currencyRequest.toString());
         Currency currency = conversionService.convert(currencyRequest, Currency.class);
         currency = currencyRepository.save(currency);
         return "redirect:/" + currency.getId() + "/edit";

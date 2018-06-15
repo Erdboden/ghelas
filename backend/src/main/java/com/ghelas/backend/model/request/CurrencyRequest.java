@@ -7,13 +7,13 @@ import java.util.Map;
 
 public class CurrencyRequest {
     private Long id;
-    private Map<String, String> title;
+    private Map<Long, String> title;
     private String symbol;
 
     public CurrencyRequest() {
     }
 
-    public CurrencyRequest(Map<String, String> title, String symbol) {
+    public CurrencyRequest(Map<Long, String> title, String symbol) {
         this.title = title;
         this.symbol = symbol;
     }
@@ -22,11 +22,11 @@ public class CurrencyRequest {
         return id;
     }
 
-    public Map<String, String> getTitle() {
+    public Map<Long, String> getTitle() {
         return title;
     }
 
-    public void setTitle(Map<String, String> title) {
+    public void setTitle(Map<Long, String> title) {
         this.title = title;
     }
 

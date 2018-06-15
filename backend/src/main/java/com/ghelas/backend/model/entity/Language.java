@@ -78,4 +78,17 @@ public class Language {
     public void setDefault(Boolean aDefault) {
         isDefault = aDefault;
     }
+
+    @Override
+    public String toString() {
+        return "Language{" +
+                "id=" + id +
+                ", iso6391='" + iso6391 + '\'' +
+                ", locale='" + locale + '\'' +
+                ", title='" + title + '\'' +
+                ", active=" + active +
+                ", isDefault=" + isDefault +
+                ", currencyTranslations=" + currencyTranslations +
+                '}';
+    }
 }

@@ -2,13 +2,20 @@
 <html lang="en"
       xmlns:th="http://www.thymeleaf.org"
       xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<header>This is header</header>
-<body layout:fragment="content">
-this is default content
+
+<div layout:replace="client/layouts/head"></div>
+
+<body>
+
+<div th:replace="client/layouts/header"></div>
+
+<div layout:fragment="content"></div>
+
+<div th:replace="client/layouts/subscribe"></div>
+
+<div th:replace="client/layouts/footer"></div>
+
+<div th:replace="client/layouts/scripts"></div>
+
 </body>
-<footer>This is footer</footer>
 </html>

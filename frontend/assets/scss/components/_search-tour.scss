@@ -1,0 +1,407 @@
+.search-tour{
+	//background: #4692e7;
+	//background: linear-gradient(135deg, #4692e7 0%,#00589b 100%);
+
+	margin-top: -125px;
+	margin-bottom: -104px;
+	z-index:5;
+	position:relative;
+	&.main-search-tour{
+		margin-bottom: 25px;
+	}
+	.search-form-wrapper{
+		background: #4692e7;
+		background: linear-gradient(135deg, #4692e7 0%,#00589b 100%);
+		border-radius: 3px;
+		
+		@include media-breakpoint-down(md) {
+			padding:20px 20px 0px;
+		}
+		@include media-breakpoint-up(lg) {
+			padding:20px 0px;
+		}
+	}
+
+	.search-tour-bottom{
+
+		@include media-breakpoint-down(md) {
+			display: none;
+		}
+
+		@include media-breakpoint-up(lg) {
+			border-top: 1px solid rgba(255,255,255,.2);
+			color: $white;
+			display: flex;
+			min-height: 142px;
+			align-items: center;
+			justify-content: space-between;
+		}
+
+		.why-we{
+			font-size: 1.5rem;
+		}
+
+		img{
+			margin-right: 10px;
+		}
+
+		.feature{
+			display: flex;
+			align-items: center;
+			font-size: 1rem;
+
+			img {
+				flex: 1;
+				margin-top:-10px;
+			}
+			p {
+				text-align: center;
+			}
+
+		}
+	}
+
+	h1{
+		text-align: center;
+		color: $white;
+
+		@include media-breakpoint-down(md) {
+			font-size: 2rem;
+			margin-bottom: 30px;
+		}
+		@include media-breakpoint-up(lg) {
+			font-size: 2.5rem;
+			margin-bottom: 60px;
+		}
+	}
+}
+
+
+.search-form-simple{
+	@include media-breakpoint-down(md) {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+	@include media-breakpoint-up(lg) {
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
+}
+
+.search-travel{
+
+	.form-group.col-md-3{
+		padding-top:15px;
+		padding-bottom: 15px;
+
+		&.active{
+			background-color: rgb(238, 238, 238);
+		}
+	}
+
+	.container-white{
+
+		label{
+			color: #138CFF;
+			margin-bottom: 10px;
+			font-weight: 400;
+			font-size: 16px;
+			text-transform: uppercase;
+			letter-spacing: 0.07em;
+		}
+
+		background-color: $white;
+		padding-bottom: 10px;
+	}
+	
+	.modal-container{
+		border-radius: 0;
+		background: #3ca0ff;
+
+		label{
+			color: #fff;
+			font-size: 0.875rem;
+            margin-bottom: 0;
+            text-transform: none;
+		}
+
+		.select-bl {
+			&:after{
+				border-top: 4px solid white;
+			}
+			select { 
+				color: $white;
+			}
+		}
+	}
+
+
+	.tab-from{
+		color: $white;
+
+		label{
+			margin:0 20px 0 0;
+		}
+
+		.select-bl {
+			width:200px;
+			border-bottom: 1px solid $white;
+
+			&:after{
+				border-top: 4px solid white;
+			}
+			select { 
+				color: $white;
+			}
+		}
+	}
+
+
+	.select-bl {
+	  box-sizing: border-box;
+	  border-radius: 0px;
+	  overflow: hidden;
+	  position: relative;
+
+	  &.nightsfrom,
+	  &.nightsto{
+	    	width:50px;
+
+	    	select{
+	    		width:150%;
+	    	}
+	    }
+
+	  &:after{
+			width: 0; 
+			height: 0; 
+			border-left: 4px solid transparent;
+			border-right: 4px solid transparent;
+			border-top: 4px solid #424242;
+			position: absolute;
+			top: calc(50% - 4px);
+			right: 0;
+			content: '';
+		}
+	}
+
+	.select-bl select { 
+		width: 100%;
+		height: 34px;
+	  	padding: 5px 0 5px 5px;
+		background: transparent;
+		color:#424242;
+		border: none;
+		-webkit-appearance: none; 
+		&:focus { outline: none; }
+
+		&::-ms-expand { display: none; }
+	}
+
+	@-moz-document url-prefix(){
+	  .select-bl select { width: 110%; }
+	}
+
+
+	.nights-info,
+	.adultcount-info{
+		line-height: 37px;
+		position:relative;
+		color: #424242;
+
+		&:after{
+			width: 0; 
+			height: 0; 
+			border-left: 4px solid transparent;
+			border-right: 4px solid transparent;
+			border-top: 4px solid #424242;
+			position: absolute;
+			top: calc(50% - 4px);
+			right: 0;
+			content: '';
+		}
+	}
+
+	.mb-15{
+		margin-bottom: 15px;
+	}
+
+	.mt-15{
+		margin-top: 15px;
+	}
+
+	.select-btn{
+		color: $white;
+		display: flex;
+		align-items: center;
+		
+		button{
+			background-color: $white;
+			color: #138CFF;
+			width: 32px;
+			height: 32px;
+			border: 0 none;
+			border-radius: 50%;
+		}
+
+		.nr-children,
+		.nr-adults{
+			width: 30px;
+			text-align: center;
+			display: inline-block;
+		}
+	}
+	
+	.btn-search{
+		border: 0 none;
+	    color: #fff;
+		font-size: 18px;
+		line-height: 40px;
+		font-weight: normal;
+		padding: 0 15px;
+		transition: background .1s ease-in;
+		background: #fbaa2a;
+		background: linear-gradient(to right, #fbaa2a 0%, #e9943a 100%);
+		cursor: pointer;
+
+		&:hover,
+		&:active {
+		  background: linear-gradient(to right, #e9943a 0%, #fbaa2a 100%);
+		  color: #fff;
+		}
+	}
+	
+	
+	.input-date{
+		border:0 none;
+		padding-left: 0;
+		padding-right: 0;
+	}
+	
+	
+	.form-control:focus{
+		box-shadow: none;
+	}
+	    
+}
+
+
+ .modal-mask {
+        position: absolute;
+        z-index: 9998;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: table;
+        transition: opacity .3s ease;
+    }
+
+    .modal-container {
+        margin: 0px auto;
+        border-radius: 2px;
+        font-family: Helvetica, Arial, sans-serif;
+    }
+
+    .modal-body {
+        margin: 0;
+        padding: 20px;
+    }
+
+    .modal-default-button {
+        float: right;
+    }
+
+    /*
+     * The following styles are auto-applied to elements with
+     * transition="modal" when their visibility is toggled
+     * by Vue.js.
+     *
+     * You can easily play with the modal transition by editing
+     * these styles.
+     */
+
+    .modal-enter {
+        opacity: 0;
+    }
+
+    .modal-leave-active {
+        opacity: 0;
+    }
+
+.ssam-theme-default-view-list{
+	.ssam-container-search-results{
+		display: block;
+		position: relative;
+		width: 100%;
+		min-height: 1px;
+		padding-right: 15px;
+		padding-left: 15px;
+		flex: 0 0 25%;
+	}
+}
+
+.travel-tour-page{
+
+	.ssam-container-control-search-nightsFrom {
+		&.ssam-container-control-search-nightsTo{
+			&.visible-xs{
+			display: none;
+			}
+		}
+	}
+
+	.ssam-container{
+		.col-md-10{
+			&.col-md-offset-1{
+				margin:0 auto;
+			}
+		} 
+	}
+
+
+	.ssam-container-search-results.ssam-container.ssam-option-show3d{
+		width:100%;
+		flex: 0 0 75%;
+	}
+
+	.ssam-theme-default-view-list{
+		display: flex;
+	}
+	.ssam-container-search-results.ssam-container.ssam-option-show3d .ssam-theme-default-view-list{
+		max-width:100%; 
+		flex: 0 0 100%;
+	}
+	.resultset{
+		width:100%;
+	} 
+
+	.ssam-container.ssam-container-search-results-inner{
+		margin:0 auto;
+	}
+
+	.btn-search{
+		-webkit-appearance: none;
+	}
+
+	#ssam-theme-default-search-box select{
+		width: 60px;
+	}
+
+	.lamaselect-custom-item > .row{
+		justify-content: space-around;
+	}
+	
+	.btn-more-param {
+		-webkit-appearance: none;
+	}
+	
+	#ssam-theme-default-search-box{
+		.btn-box{
+			width: 100%;
+		}
+	}
+
+}
+
+

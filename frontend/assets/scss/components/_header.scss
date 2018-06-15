@@ -1,0 +1,286 @@
+.stop-scroll{
+	overflow-y:hidden;
+}
+
+header{
+	z-index: 10;
+	.container{
+		min-height: 80px;
+		justify-content: space-between;
+		display: flex;
+		align-items: center;
+	}
+
+	.logo{
+		@include media-breakpoint-down(lg) { 
+			margin-right: 30px;
+		}
+
+		@include media-breakpoint-up(xl) { 
+			width: 256px;
+		}
+
+	}
+
+	.navbar{
+		position: static;
+		padding: 0;
+		
+		@include media-breakpoint-down(md) { 
+			justify-content: end;
+		}
+
+		@include media-breakpoint-up(lg) { 
+			flex: 1;
+		}
+
+		.navbar-collapse{
+			@include media-breakpoint-up(lg) { 
+				justify-content: space-between;
+				align-items: center;
+				z-index: 5;
+			}
+
+			@include media-breakpoint-down(md) { 
+				transition: transform .4s ease;
+				position: fixed;
+				top: 0;
+				bottom: 0;
+				right: 0;
+				transform: translate3d(100%,0,0);	
+				background-color: $white;
+				height: 100%;
+				display: flex;
+				flex-direction: column;
+				width: 90%;
+				z-index:5;
+
+				&.in,
+				&.show{
+					transform: translateZ(0);
+					
+				}
+			}
+
+			.close-icon-stoke {
+			  stroke: #333;
+			  width: 14px;
+			  height: 14px;
+			}
+		}
+
+		.navbar-toggler{
+			cursor: pointer;
+
+			&:focus{
+				outline: none;
+			}
+		}
+		
+		> .navbar-toggler{
+			
+			&:before{
+				background-color: rgba(251, 170, 42, .9);
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				content: '';
+				opacity: 1;
+				height: 100%;
+				width: 100%;
+				transition: opacity .2s ease;
+				z-index: 4;
+			}
+			&.collapsed{
+				&:before{
+					opacity: 0;
+					display: none;
+					transition: opacity .2s ease;
+				}
+			}
+		}
+		.navbar-toggler-icon{
+			background-color: #333;
+			height: 1px;
+			position: relative;
+
+			&:before{
+				content: '';
+				top: -7px;
+				background-color: #333;
+				height: 1px;
+				position: absolute;
+				width: 100%;
+				left: 0;
+			}
+
+			&:after{
+				content: '';
+				bottom: -7px;
+				background-color: #333;
+				height: 1px;
+				position: absolute;
+				width: 100%;
+				left: 0;
+			}
+		}
+	}
+
+	.phone-header{
+		line-height: 1.1;
+		letter-spacing: -0.2px;
+		color: #333;
+
+		@include media-breakpoint-down(md) { 
+			order: 3;
+			width: 100%;
+			padding: 0px 40px 33px;
+		}
+
+		strong{
+			display: block;
+			
+
+			@include media-breakpoint-down(md) { 
+				font-size: 1.625rem;
+				padding-top: 6px;
+			}
+
+			@include media-breakpoint-up(lg) { 
+				font-size: 1.25rem;
+				padding-top: 3px;
+			}
+
+		}
+	}
+
+	.navbar-mobile{
+		@include media-breakpoint-down(md) { 
+			background-color: #f8f8f8;
+			width: 100%;
+			padding: 0px 40px;
+			height: 75px; 	
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			order: 1;
+		}
+
+		.close-btn{
+			margin-left: -10px;
+
+			svg{
+				width: 14px;
+				height: 14px;
+			}
+			
+		}
+	}
+
+	.lang{
+		list-style: none;
+		padding: 0;
+		margin-bottom: 0;
+		margin-right: -8px;
+
+		li{
+			display: inline-block;
+
+			&.current-page-item{
+				span{
+					border-bottom: 1px solid #201b26;
+				}
+				a{
+					color: #201b26;
+				}
+			}
+			a{
+				color: #909090;
+				text-decoration: none;
+				padding: 10px 8px;
+				font-weight: 700;
+			}
+			span{
+				border-bottom: 1px solid trasparent;
+				line-height: 21px;
+				font-size: 0.75rem;
+				display: inline-block;
+			}
+		}
+	}
+}
+
+.main-menu{
+	font-size: 1rem;
+	position: relative;
+
+	@include media-breakpoint-down(md) { 
+		order: 2;
+		width: 100%;
+		padding: 15px 40px 47px;
+	}
+
+	@include media-breakpoint-up(lg) { 
+		padding-right: 45px;
+	}
+
+	ul{
+		list-style: none;
+		margin-bottom: 0;
+		padding-left: 0;
+	}
+	
+
+	li{
+		margin: 0;
+		
+		@include media-breakpoint-down(md) { 
+			border-bottom: 1px solid #eee;
+		}
+		
+		@include media-breakpoint-up(lg) { 
+			padding: 25px 0px;
+			display: inline-block;
+			border-bottom: 3px solid transparent;
+		}
+
+		&.current-page-item,
+		&:hover{
+
+			@include media-breakpoint-down(md) { 
+				border-bottom: 2px solid #ffa127;
+			}
+		
+			@include media-breakpoint-up(lg) { 
+				border-color: #ffa127;
+			}
+		}
+		a{
+			color: #333;
+			letter-spacing: -0.2px;
+			text-decoration: none;
+
+			@include media-breakpoint-down(md) { 
+				display: block;
+				padding: 14px 0px;
+			}
+
+			@include media-breakpoint-up(lg) { 
+				padding: 0px 10px;
+			}
+		}
+	}
+
+	#magic-line { 
+		position: absolute; 
+		bottom: -3px; 
+		left: 0; 
+		width: 100px; 
+		height: 3px; 
+		background: #ffa127; 
+		padding: 0;
+	}
+}
+

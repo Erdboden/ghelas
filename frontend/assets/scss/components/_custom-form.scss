@@ -1,0 +1,145 @@
+
+
+.btn-group.view-buttons.hidden-sm.hidden-xs,
+.container.mobile-ui.ssam-theme-default-view-list .col-md-3,
+.header-box.ssam-theme-background,
+.col-md-3.ssam-container.ssam-container-control-search-currency{
+  display: none;
+}
+
+#ssam-theme-default-search-tour{
+  margin-top:0 !important;
+}
+
+.ssam-container .container.mobile-ui .col-md-10.col-md-offset-1{
+  padding-top: 20px;
+  padding-bottom:20px;
+  flex: 0 0 100%;
+    max-width: 1140px;
+}
+
+
+#ssam-theme-default-search-box .row.ssam-theme-default-has-search{
+  display: flex !important;
+}
+
+
+
+#ssam-theme-default-more-param.collapse.in{
+  display: block !important;
+}
+
+
+.travel-tour-page .ssam-theme-default-view-list{
+  padding:0;
+}
+
+
+.travel-tour-page .ssam-container-search-results.ssam-container.ssam-option-show3d{
+  flex: 0 0 100%;
+}
+
+
+
+.ssam-theme-default-service-block-icon{
+      -webkit-appearance: none !important;
+}
+
+.btn.btn-buy-tour.ssam-theme-loading-element.ssam-theme-default-booking-buy{
+  color: #fff;
+  -webkit-appearance: none !important;
+}
+
+
+.ssam-container .ssam-control.ssam-control-search-page + .container.mobile-ui{
+  width:100%;
+  max-width:100%;
+  background: #4692e7;
+  background: linear-gradient(135deg, #4692e7 0%,#00589b 100%);
+}
+
+@media (min-width: 576px){
+  .ssam-container .container.mobile-ui .col-md-10.col-md-offset-1{
+      max-width: 540px;
+  }
+}
+
+@media (min-width: 768px){
+  .ssam-container .container.mobile-ui .col-md-10.col-md-offset-1{
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px){
+  .ssam-container .container.mobile-ui .col-md-10.col-md-offset-1{
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px){
+  .ssam-container .container.mobile-ui .col-md-10.col-md-offset-1{
+    max-width: 1140px;
+  }
+}
+
+
+
+
+
+.widget{
+  &.widget-travel{
+    width:100%;
+
+    .widget-ui-input[readonly]{
+      font-size: 13px;
+      font-weight: normal;
+      color: #0a0a0f !important;
+
+      &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: #0a0a0f !important;
+        opacity: 0.7; /* Firefox */
+      }
+
+    }
+
+    .row{
+      width:100%;
+    }
+
+    .no-gutters > [class*="col-"]{
+      padding-left: 7px;
+      padding-right: 7px;
+    }
+
+    .form-group {
+
+      @media (min-width: 992px){
+        flex: 0 0 166px;
+        max-width: 100%;
+        margin-bottom: 0rem;
+      }
+
+      @media (min-width: 1200px){
+        flex: 0 0 202px;
+        max-width: 100%;
+      }
+
+      
+    }
+
+   .btn-col{
+      padding-left: 7px;
+      padding-right: 7px;
+
+      @media (min-width: 992px){
+            flex: 0 0 0;
+            max-width: 100%;
+      }
+    }
+  }
+}
+
+.nemo-widget-testWrapper{
+  width:100%;
+}
+

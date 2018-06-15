@@ -16,7 +16,7 @@ public class FurnitureCmsController {
 
     @RequestMapping(path = "", method = RequestMethod.GET)
     public ModelAndView index() {
-        ModelAndView mav = new ModelAndView("cms/home");
+        ModelAndView mav = new ModelAndView("index");
         mav.addObject("furnitures", new FurnitureResponse());
         return mav;
     }

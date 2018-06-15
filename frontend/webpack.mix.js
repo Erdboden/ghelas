@@ -10,5 +10,8 @@ let mix = require('laravel-mix');
  |
  */
 mix.setPublicPath('../backend/src/main/resources/static');
-mix.js('assets/js/main.js', '../backend/src/main/resources/static/js')
-    .sass('assets/scss/main.scss', '../backend/src/main/resources/static/css');
+mix.js('assets/js/app.js', '../backend/src/main/resources/static/js')
+    .sass('assets/scss/app.scss', '../backend/src/main/resources/static/css');
+mix.copy('assets/img', '../backend/src/main/resources/static/img');
+
+

@@ -1,0 +1,31 @@
+<div class="container articles" xmlns:th="http://www.thymeleaf.org">
+    <h3 class="offers-title">
+    	<span>
+    		<i class="icon">
+		        <img th:src="@{/img/articles.svg}" alt="">
+		    </i>
+            Articles
+    	</span>
+        <a class="view-all" href="#"><span>/</span>All articles</a>
+    </h3>
+    <div class="row">
+        <div class="col-md-4 blog-grid">
+            <div class="blog-thumbnail">
+                <a href="#"><img
+                        th:src="@{/img/shutterstock_147744218-700x450.jpg}"></a>
+            </div>
+            <a class="info-date" href="#">
+                20.08.2018
+            </a>
+            <h3 class="title"><a href="#">Article title</a></h3>
+            <div class="blog-content">
+                description
+            </div>
+
+            <div class="blog-info">
+                <i aria-hidden="true" class="fa fa-folder-o"></i>
+                Tag1, tag2, tag3
+            </div>
+        </div>
+    </div>
+</div>

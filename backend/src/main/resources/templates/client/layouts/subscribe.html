@@ -1,0 +1,50 @@
+<div class="newsletter-wrapper" xmlns:th="http://www.thymeleaf.org">
+    <div class="container">
+        <div class="newsletter-subscription">
+            <img th:src="@{/img/newsletter.png}" alt="">
+            <p>
+                Subscribe
+            </p>
+        </div>
+
+        <div>
+
+            <form action="#"
+                  method="post"
+                  id="mc-embedded-subscribe-form"
+                  name="mc-embedded-subscribe-form"
+                  class="newsletter-form"
+                  target="_blank"
+                  novalidate
+            >
+                <div id="mc_embed_signup_scroll">
+                    <div class="newsletter-email">
+                        <div class="mc-field-group">
+                        <input
+                                class="email"
+                                placeholder="email"
+                                type="email"
+                                name="EMAIL"
+                                size="30"
+                                required>
+                            <div for="EMAIL" class="mce_inline_error"></div>
+                            
+                       
+							<div id="mce-responses" class="clear">
+								<div class="response mce-error-response" id="mce-error-response"></div>
+								<div  class="response mce-success-response" id="mce-success-response"></div>
+								<div style="position: absolute; left: -5000px;" aria-hidden="true">
+									<input type="text" name="b_e0bb80c13e9eb342314567c07_615bebe2c4" tabindex="-1" value=""></div>
+							</div>
+			
+                        </div>
+                    </div>
+                </div>
+                <button class="newsletter-submit" type="submit" name="subscribe"
+                        id="mc-embedded-subscribe"
+                >subscribe <i class="fa fa-plane"></i></button>
+            </form>
+            
+        </div>
+    </div>
+</div>

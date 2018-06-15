@@ -11,17 +11,29 @@
   },
   "devDependencies": {
     "axios": "^0.17",
-    "bootstrap-sass": "^3.3.7",
     "cross-env": "^5.1",
     "jquery": "^3.2.1",
     "laravel-mix": "^1.0",
     "less": "^2.7.3",
     "less-loader": "^4.0.5",
     "lodash": "^4.17.4",
-    "vue": "^2.5.7"
+    "vue": "^2.5.7",
+    "slick-carousel": "^1.8.1",
+    "vuedraggable": "^2.16.0",
+    "bootstrap-daterangepicker": "^3.0.3",
+    "font-awesome": "^4.7.0"
   },
   "dependencies": {
     "animate.css": "^3.6.1",
-    "babel-polyfill": "^6.26.0"
+    "babel-polyfill": "^6.26.0",
+    "bootstrap": "^4.1.1",
+    "google-geocode": "0.0.2",
+    "leaflet-search": "^2.3.7",
+    "npm-install-version": "^6.0.2",
+    "popper.js": "^1.14.3",
+    "vue-color": "^2.4.3",
+    "vue-i18n": "^7.4.1",
+    "vue-slider-component": "^2.5.3",
+    "vue2-leaflet": "0.0.58"
   }
 }

@@ -1,0 +1,211 @@
+.slick-prev {
+    left: 5px;
+    z-index:9999;
+}
+.slick-next {
+    right: 5px;
+}
+.slick-dots {
+    bottom: -10px;
+}
+
+#hero-slider{
+    visibility: hidden;
+    position:relative;
+
+
+    .slick-next,
+    .slick-prev{
+        padding: 16px 12px;
+        position: absolute;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        top: calc(50% - 53px);
+        z-index: 1;
+
+    @include media-breakpoint-down(md) { 
+      display: none !important;
+    }
+
+    @include media-breakpoint-up(lg) { 
+      padding: 16px 12px;
+    }
+
+    &:focus{
+      outline: none;
+    }
+
+    i{
+      width: 29px;
+      color: $white;
+      opacity: .75;
+      font-size: 42px;
+      text-align: center;
+      display: block;
+    }
+    }
+    .slick-prev{
+        left:0;
+    }
+    .slick-next{
+        right:0;
+    }
+
+    &.slick-initialized{
+        visibility: visible;
+    }
+}
+
+.hero-slide {
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+}
+.hero-content {
+   
+    position:relative;
+
+    @include media-breakpoint-down(md) {
+        height: 360px;
+    }
+    
+    @include media-breakpoint-up(lg) {
+        height: 550px;
+    }
+}
+.slide-message {
+    margin-bottom: 20px;
+}
+
+
+.title1{
+    position: absolute; display: block; visibility: visible; left: 0px;  z-index: 9;
+    white-space: nowrap;
+    
+    font-weight: 300;
+    color: rgb(186, 217, 255);
+    visibility: inherit;
+    transition: none;
+    text-align: left;
+    margin: 0px;
+    padding: 0px;
+    letter-spacing: 0px;
+
+    @include media-breakpoint-down(md) {
+        top: 42px;
+        font-size: 16px;
+        line-height: 28px;
+    }
+    
+    @include media-breakpoint-up(lg) {
+        top: 72px;
+        font-size: 24px;
+        line-height: 40px;
+    }
+}
+
+
+.title2{
+    position: absolute; 
+    display: block; 
+    visibility: visible; 
+    left: 0px; 
+    z-index: 10;
+    white-space: nowrap;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    visibility: inherit;
+    transition: none;
+    text-align: left;
+    margin: 0px;
+    padding: 0px;
+    letter-spacing: 0px;
+
+    @include media-breakpoint-down(md) {
+        top: 60px; 
+        font-size: 40px;
+        line-height: 67px;
+    }
+    
+    @include media-breakpoint-up(lg) {
+        top: 105px; 
+        font-size: 80px;
+        line-height: 133px;
+    }
+}
+
+
+.title3{
+    position: absolute; 
+    display: block; 
+    visibility: visible; 
+    left: 0px; 
+    z-index: 11;
+    white-space: nowrap;
+    font-weight: 300;
+    color: rgb(218, 229, 255);
+    visibility: inherit;
+    transition: none;
+    text-align: left;
+    margin: 0px;
+    padding: 0px;
+    letter-spacing: 0px;
+
+    @include media-breakpoint-down(md) {
+        top: 122px; 
+        font-size: 12px;
+        line-height: 20px;
+    }
+    
+    @include media-breakpoint-up(lg) {
+        top: 232px; 
+        font-size: 18px;
+        line-height: 30px;
+    }
+}
+
+.btn-hero{
+    position: absolute; 
+    display: block; 
+    visibility: visible; 
+    left: 0px; 
+    z-index: 12;
+    white-space: nowrap;
+    font-weight: 500;
+    color: $white;
+    text-transform: uppercase;
+    background-color: rgb(70, 146, 231);
+    border-radius: 3px;
+    outline: none;
+    box-shadow: rgb(153, 153, 153) 0px 0px 0px 0px;
+    box-sizing: border-box;
+    cursor: pointer;
+    visibility: inherit;
+    transition: none;
+    text-align: left;
+    margin: 0px;
+    padding: 20px 32px;
+    letter-spacing: 0px;
+
+
+    @include media-breakpoint-down(md) {
+        top: 162px; 
+        padding: 10px 16px;
+        font-size: 10px;
+        line-height: 12px;
+    }
+    
+    @include media-breakpoint-up(lg) {
+        top: 297px;  
+        padding: 20px 32px;
+        font-size: 13px;
+        line-height: 12px;
+    }
+
+    &:hover{
+        background-color: rgb(70, 123, 231);
+        color: $white;
+    }
+}

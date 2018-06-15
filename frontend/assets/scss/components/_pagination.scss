@@ -1,0 +1,40 @@
+.pagination{
+  padding-bottom: 40px;
+
+  li{
+    cursor: pointer;
+    &.disabled{
+      display: none
+    }
+    span,
+    a{
+      display: inline-block;
+      width: 45px;
+      height: 45px;
+      line-height: 45px;
+      font-size: 12px;
+      margin-right: 4px;
+      text-align: center;
+      color: #929292;
+      background-color: #e6e6e6;
+      border-radius: 50%;
+      white-space: nowrap;
+      font-weight: bold;
+      &:hover{
+        text-decoration: none;
+      }
+    }
+
+    &.active,
+    &:hover{
+      span,
+      a{
+        background-color: #468ae7;
+        color: $white;
+
+      }
+    }
+
+    
+  }
+}

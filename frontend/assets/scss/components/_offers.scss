@@ -1,0 +1,68 @@
+.offers{
+  background-image: url(../img/search-bg.png);
+  background-size: cover;
+  padding-bottom: 50px;
+  padding-top: 74px;
+}
+.offers,
+.offers-list{
+  
+  position: relative;
+
+  .offers-title{
+    color: $white;
+  }
+
+  .tour-price-bottom-wrap{
+    background-color: $white;
+  }
+
+  .tour-info-wrap{
+    margin-bottom: 9px;
+  }
+
+  .tour-content{
+    margin-bottom: 14px;
+    line-height: 1.571;
+    min-height: 88px;
+  }
+
+  .tour-title{
+    min-height: 54px;
+    margin-bottom: 0px;
+  }
+
+  .tour-rating{
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 0;
+  }
+
+  .tour-content-wrap{
+    position: relative;
+  }
+}
+
+.offers-list{
+  
+  .tour-content-wrap,
+  .tour-price-bottom-wrap{
+    background-color: #f3f3f3;
+  }
+}
+
+.offers{
+  .offers-title{
+    a{
+      color: $white;
+    }
+  }
+}
+
+
+
+
+    
+
+
+

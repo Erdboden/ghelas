@@ -1,0 +1,211 @@
+
+.offers-title{
+  font-size: 1.625rem;
+  font-weight: 300;
+  line-height: 32px;
+  letter-spacing: -0.2px;
+  text-transform: none;
+  margin-bottom: 31px;
+  
+
+  @include media-breakpoint-down(md) { 
+    & > span{
+      display: block;
+    }
+  }
+
+  @include media-breakpoint-up(lg) { 
+    display: flex;
+    justify-content: space-between;
+  }
+
+  i{
+    display: inline-block;
+    margin-right: 14px;
+  }
+
+  .view-all{
+    color: #467fe7;
+    margin-top: 8px;
+    line-height: 25px;
+    font-style: italic;
+    font-size: 15px;
+    text-decoration: none;
+    
+    @include media-breakpoint-down(md) { 
+      
+    }
+
+    @include media-breakpoint-up(lg) { 
+      margin-left: 25px;
+    }
+
+    span{
+      margin-right: 13px;
+      @include media-breakpoint-down(md) { 
+        display: none;
+      }
+    }
+  }
+  
+}
+
+
+
+.tour-thumbnail{ 
+  margin-bottom: 0px; 
+  position:relative;
+}
+
+.thumbnail{
+  a{
+    position:relative;
+    display: block;
+
+    &:after{
+      content: '';
+      position: absolute;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      height: 50%;
+      background: url(/images/single-tour-gradient.png) top repeat-x;
+      z-index: 1;
+    }
+  }
+  
+
+    
+}
+
+.thumbnail-ribbon {
+    line-height: 1;
+    z-index: 2;
+    position: absolute;
+    top: 30px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    padding: 14px 20px 14px 30px;
+    left: 5px;
+    color: $white;
+    background-color: #e85e34;
+
+    .corner{
+      position: absolute;
+      left: -10px;
+      bottom: -10px;
+      width: 0px;
+      height: 0px;
+      border-style: solid;
+      border-width: 0px 10px 10px 10px;
+      border-left-color: transparent;
+      border-top-color: transparent;
+      border-bottom-color: transparent;
+      border-right-color: rgba(232, 94, 52, 0.5);
+    }
+}
+
+
+.tour-content-wrap{
+  padding: 32px 25px 8px;
+  background-color: $white;
+  //margin-bottom:30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tour-top{
+  
+}
+
+.tour-price-bottom-wrap{
+  padding: 0px 25px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  white-space: nowrap;
+  min-height: 59px;
+
+  .tour-price-head{
+    line-height: 16px;
+    i{
+      margin-right: 10px;
+    }
+  }
+
+  .tour-price-content{
+    color: #4692e7;
+    font-weight: 700;
+    font-size: 1.375rem;
+    text-align: right;
+    line-height: 0.95;
+    position: relative;
+    
+    .head {
+      font-size: 0.9375rem;
+      line-height: 1rem;
+      margin-bottom: 7px;
+      font-weight: normal;
+      display: block;
+      color: #8c8c8c;
+      position: absolute;
+      top: -23px;
+      right: 0;
+    }
+
+  }
+}
+
+.tour-title{
+
+  font-size: 0.9375rem;
+  font-weight: 800;
+  margin-bottom: 17px;
+
+  a{
+      color: #313131;
+  }  
+}
+
+.tour-info i{
+  width: 20px;
+  display: inline-block;
+  margin-right: 4px;
+  color: #4692e7;
+}
+
+.tour-rating,
+.tour-conten{ margin-bottom: 14px; }
+
+
+.tour-rating i{
+  color: #ffa127;
+}
+
+.tour-rating-text {
+    margin-left: 6px;
+    font-size: 0.6875rem;
+    font-weight: normal;
+}
+
+.tour-price{
+  text-align: right;
+
+  .head {
+    font-size: 0.9375rem;
+    line-height: 1rem;
+    margin-bottom: 7px;
+    font-weight: normal;
+    display: block;
+  }
+
+  .tail {
+    font-size: 1.375rem;
+    font-weight: 800;
+    line-height: 1;
+    color: #4692e7;
+    white-space: nowrap;
+    display: block;
+    margin-bottom: 7px;
+  }
+}

@@ -1,0 +1,20 @@
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{cms/layouts/app}">
+
+<div id="app" layout:fragment="content">
+    <form action="#" th:action="@{/cms/currencies/create}" method="post">
+        <div class="form-group" th:each="language : ${languages}">
+            <label for="title">Title</label>
+            <input class="form-control" type="text" id="title" th:name="'title['+${language.id}+']'">
+        </div>
+
+        <div class="form-group">
+            <label for="symbol">Symbol</label>
+            <input class="form-control" type="text" id="symbol" name="symbol">
+        </div>
+
+        <button class="btn btn-primary" type="submit">Submit</button>
+    </form>
+</div>
+</html>

@@ -2,18 +2,18 @@
 <html lang="en"
       xmlns:th="http://www.thymeleaf.org"
       xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
-<head>
-    <meta charset="UTF-8">
-    <title>My title</title>
-    <!-- Styles -->
-    <link th:href="@{/css/main.css}" rel="stylesheet">
-</head>
-<header>Default header</header>
+
+<div layout:replace="client/layouts/head"></div>
+
 <body>
-<div id="app" layout:fragment="content">
-    Default content
-</div>
-<script type="text/javascript" th:src="@{/js/main.js}"></script>
+
+<div th:replace="client/layouts/header"></div>
+
+<div layout:fragment="content"></div>
+
+<div th:replace="client/layouts/footer"></div>
+
+<div th:replace="client/layouts/scripts"></div>
+
 </body>
-<footer>Default footer</footer>
 </html>

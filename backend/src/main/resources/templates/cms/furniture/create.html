@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorator="cms/layouts/app">
+<div layout:fragment="content">
+    <hello></hello>
+    <form action="#" th:action="@{/cms/furniture}" method="post" enctype="multipart/form-data">
+        <label>Title</label>
+        <input id="title" name="title" type="text">
+        <label>Description</label>
+        <textarea id="description" name="description"></textarea>
+        <label>Cover image</label>
+        <input id="coverImage" name="coverImage" type="file">
+        <label>Gallery</label>
+        <input id="gallery" name="gallery" type="file" multiple>
+        <button type="submit">Submit</button>
+    </form>
+</div>
+</html>
